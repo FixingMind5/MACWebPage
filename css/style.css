@@ -1,0 +1,801 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?tmilpq');
+  src:  url('../fonts/icomoon.eot?tmilpq#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?tmilpq') format('truetype'),
+    url('../fonts/icomoon.woff?tmilpq') format('woff'),
+    url('../fonts/icomoon.svg?tmilpq#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.burger-button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(27, 27, 27, .8);
+  display: none;
+  line-height: 50px;
+  text-align: center;
+  position: fixed;
+  z-index: 4;
+  right: 5px;
+  top: 5px;
+  color: white;
+  font-size: 25px;
+}
+
+.icon-th-menu-outline:before {
+  content: "\e901";
+}
+
+* {
+  font-family: 'Be Vietnam', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 320px) {
+  body {
+    margin: 0px;
+  }
+
+  .burger-button {
+    display: block;
+  }
+
+  .menu {
+    color: white;
+    justify-content: center;
+    display: flex;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    flex-wrap: wrap;
+    background-color: rgba(193, 127, 38, .9);
+    margin: 0;
+    padding: 0;
+    z-index: 3;
+    font-size: 30px;
+    right: -100%;
+    transition: .3s
+  }
+
+  .menu.is-active {
+    right: 0;
+  }
+
+  .menu ul {
+    list-style: none;
+  }
+
+  .menu li {
+    margin: 10px 0px;
+  }
+
+  .menu a {
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+  }
+
+  header {
+    width: 320px;
+    background-color: black;
+    /* padding: 10px; */
+    margin: 0px;
+    display: grid;
+    justify-content: space-between;
+  }
+
+  .macLogo img {
+    height: 30px;
+    width: 50px;
+    padding: 10px;
+  }
+
+  .hamburgerMenu {
+    justify-self: flex-end;
+  }
+
+  .logos {
+    /* margin-top: 54px; */
+    width: 320px;
+    padding: 20px 0px 80px 0px;
+    background-image: -webkit-linear-gradient(rgba(255,255,255,0), rgba(255,255,255,1)),
+    url("../images/roca.jpg");
+    background-image: -o-linear-gradient(rgba(255,255,255,0), rgba(255,255,255,1)),
+    url("../images/roca.jpg");
+    background-image: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,1)),
+    url("../images/roca.jpg");
+    background-size: cover;
+  }
+
+  .containerLogo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    background-color: rgba(0, 43, 122,.8);
+    margin: 0px 20px;
+    border-radius: 20px;
+    padding: 20px;
+  }
+
+  .unamImg {
+    background-image: url("../images/unamLogo.png");
+    background-size: cover;
+  }
+
+  .acatlanImg {
+    background-image: url("../images/fesa.png");
+    background-size: cover;
+  }
+
+  .unamImg, .acatlanImg {
+    width: 127.5px;
+    height: 130px;
+    justify-self: center;
+  }
+
+  .secondMenu {
+    background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)),
+    url("../images/coolBackground.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 414px;
+    padding: 10px 0;
+  }
+
+  .secondMenuContainer {
+    width: 414px;
+    padding: 10px 0;
+  }
+
+  .option {
+    /* border: 1px solid black; */
+    border-radius: 15px;
+    text-align: left;
+    padding: 10px 25px;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr 30px;
+    align-items: center;
+    font-size: 20px;
+    -webkit-box-shadow: 4px 4px 12px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 4px 12px 1px rgba(0,0,0,0.75);
+    box-shadow: 4px 4px 12px 1px rgba(0,0,0,0.75);
+    background-color: rgba(0, 43, 122,.8);
+    color: white;
+  }
+
+  .image {
+    justify-self: flex-end;
+    width: 30px;
+    height: 30px;
+    /* margin-right: 20px; */
+    background-image: url("../images/huella.png");
+    background-size: contain;
+  }
+
+  .mac {
+    text-transform: uppercase;
+  }
+
+  .recentNews {
+    width: 320px;
+    margin-bottom: 14px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)),
+    url("../images/coolBackground.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .recentNewsContainer {
+    border-radius: 15px;
+    margin: 0px 20px 20px 20px;
+    padding: 10px;
+    -webkit-box-shadow: 4px 4px 12px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 4px 12px 1px rgba(0,0,0,0.75);
+    box-shadow: 4px 4px 12px 1px rgba(0,0,0,0.75);
+    display: grid;
+    grid-template-rows: 40px repeat(3, 1fr) 50px;
+    background-color: rgba(0, 43, 122,.8);
+    color: white;
+  }
+
+  .recentNewsContainer h1, h3 {
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+  }
+
+  .recentNewsContainer input {
+    border-radius: 10px;
+    margin: 5px 25px;
+    background-image: linear-gradient(to bottom, #EFCA45 52%, #CEA510 100%);
+    font-size: 15px;
+    align-self: center;
+    /* padding-bottom: 7px; */
+    width: 300px;
+    height: 35px;
+  }
+
+  .recentNewsContainer input:hover {
+    background-color: #CEA510;
+    color: white;
+  }
+
+  .aNew {
+    padding: 25px;
+    text-align: justify;
+    border-top: 1px solid gray;
+    margin: 10px;
+  }
+
+  .aNew p {
+    margin: 0;
+  }
+
+  .recentEvents {
+    width: 320px;
+  }
+
+  .recentEventsContainer {
+    -webkit-box-shadow: 4px 4px 12px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 4px 12px 1px rgba(0,0,0,0.75);
+    box-shadow: 4px 4px 12px 1px rgba(0,0,0,0.75);
+    background-color: rgba(0, 43, 122,.8);
+    margin: 0px 20px;
+    border-radius: 15px;
+    padding: 20px 0px;
+    margin: 0px 20px;
+    text-align: center;
+    color: white;
+  }
+
+  .recentEventsContainer h1 {
+    border-bottom: 0.5px solid gray;
+    margin: 0px 20px;
+    padding: 0px;
+    padding-bottom: 20px;
+  }
+
+  .recentEventsContainer p {
+    border-bottom: 0.5px solid gray;
+    margin: 20px 20px;
+    padding-bottom: 20px;
+    /* border-radius: 15px; */
+  }
+
+  .recentEventsContainer input {
+    background-image: linear-gradient(to bottom, #EFCA45 52%, #CEA510 100%);
+    border: none;
+    margin: 0;
+    padding: 5px 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 200px;
+    height: 35px;
+  }
+
+  /* .recentEvents input:hover {
+    background-color: white;
+  } */
+
+  .recentEvents {
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)),
+    url("../images/escudo.jpeg");
+    background-size: cover;
+    padding: 0px 0px 50px 0px;
+  }
+
+  footer {
+    width: 394px;
+    padding: 10px 10px;
+    background-image: linear-gradient(to bottom, black 50%, white 100%);
+    /* background-color: black; */
+    color: white;
+    display: grid;
+    align-items: center;
+    font-size: 12px;
+    padding-left: 10px;
+    /* flex-wrap: wrap; */
+  }
+
+  footer img {
+    justify-self: left;
+    height: 30px;
+    width: 50px;
+  }
+
+  footer p, img {
+    justify-self: center;
+  }
+
+  .macMini {
+    width: 35px;
+    height: 20px;
+  }
+
+  .socialMedia {
+    width: 390px;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(6, 60px);
+    justify-items: center;
+    align-items: center;
+    padding: 2px;
+  }
+
+  .socialMedia img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .calendario img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .iOS img {
+    border-radius: 20px;
+  }
+
+  .android img {
+    border-radius: 20px;
+  }
+
+  .info {
+    text-align: center;
+  }
+
+  .message {
+    color: black
+  }
+
+}
+
+@media screen and (max-width: 360px) {
+  header {
+    width: 340px;
+  }
+
+  .logos {
+    width: 360px;
+  }
+
+  .middlePage {
+    width: 360px;
+  }
+
+  .recentNews {
+    width: 360px;
+  }
+
+  .recentEvents {
+    width: 360px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  header {
+    width: 355px;
+  }
+
+  .logos {
+    width: 375px;
+  }
+
+  .middlePage {
+    width: 375px;
+  }
+
+  .recentNews {
+    width: 375px;
+  }
+
+  .recentEvents {
+    width: 375px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+
+  header {
+    width: 414px;
+  }
+
+  .logos {
+    width: 414px;
+  }
+
+  .middlePage {
+    width: 414px;
+  }
+
+  .recentNews {
+    width: 414px;
+  }
+
+  .recentEvents {
+    width: 414px;
+  }
+
+  .middlePage {
+    background-size: cover;
+    /* width: 414px; */
+  }
+}
+
+
+@media screen and (min-width: 415px) and (max-width: 768px) {
+  header {
+    width: 768px;
+  }
+
+  .logos {
+    width: 768px;
+  }
+
+  .containerLogo img {
+    width: 227.5px;
+    height: 230px;
+  }
+
+  .middlePage {
+    display: grid;
+    grid-template-columns: repeat(2, 414px);
+    grid-template-rows: repeat(2, 1fr);
+    background-image: none;
+    margin: 0;
+    background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)),
+    url("../images/escudo.jpeg");
+    background-size: 1000px 500px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+
+  .secondMenu {
+    grid-row: 1/-1;
+    background-image: none;
+  }
+
+
+
+  .option {
+    font-size: 15px;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr 30px;
+  }
+
+  .option:hover {
+    font-weight: 700px;
+    color: black;
+    background-color: white;
+  }
+
+  .recentNewsContainer {
+    width: 294px;
+    display: grid;
+    grid-template-rows: 30px repeat(3, 110px);
+    height: 450px;
+    margin: 40px 0px 0px 20px;
+  }
+
+  .recentNews {
+    background-image: none;
+  }
+
+  .aNew {
+    padding: 0px;
+  }
+
+  .aNew h3 {
+    margin: 5px 0px;
+  }
+
+  .recentNewsContainer input {
+    margin: 20px 0px 0px 0px;
+    justify-self: center;
+    width: 200px;
+  }
+
+  .recentEvents {
+    height: 220px;
+    background-image: none;
+  }
+
+  footer {
+    width: 748px;
+  }
+
+  .recentEventsContainer {
+    width: 314px;
+  }
+
+  .socialMedia {
+    justify-self: center;
+  }
+
+  .middlePage {
+    width: 768px;
+  }
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px){
+  header {
+    width: 1024px;
+  }
+
+  .logos {
+    width: 1024px;
+  }
+
+  .unamImg {
+    background-image: url("../images/unamLogoGrande.png");
+    /* background-size: cover; */
+    width: 427.5px;
+    /* height: 330px; */
+  }
+
+  .acatlanImg {
+    background-image: url("../images/fesaGrande.png");
+    /* background-size: cover; */
+    width: 427.5px;
+  }
+
+  .secondMenu {
+    grid-row: 1/-1;
+    background-image: none;
+  }
+
+  .middlePage {
+    width: 1024px;
+    display: grid;
+    grid-template-columns: repeat(2, 512px);
+    grid-template-rows: repeat(2, 1fr);
+    font-size: 10px;
+    background: none;
+    background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)),
+    url("../images/escudo.jpeg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 1100px 500px;
+    /* align-items: center; */
+  }
+
+  .recentNews {
+    background-image: none;
+    justify-content: center;
+  }
+
+  .recentNewsContainer {
+    margin-top: 40px;
+    height: 400px;
+    width: 400px;
+    display: grid;
+    grid-template-rows: 20px repeat(3, 100px);
+    justify-self: center;
+  }
+
+  .recentNews p {
+    font-size: 12px;
+  }
+
+  .recentNewsContainer input {
+    justify-self: center;
+  }
+
+  .recentEventsContainer {
+    height: 400px;
+    width: 400px;
+  }
+
+  .recentEvents {
+    background-image: none;
+  }
+
+  .recentNews input {
+    justify-self: center;
+  }
+
+  footer {
+    width: 1004px;
+  }
+
+  .socialMedia {
+    justify-self: center;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .burger-button {
+    /* display: none; */
+  }
+
+  /* .menu {
+    position: static;
+    display: none;
+    right: 0;
+  } */
+
+  body {
+    display: grid;
+    grid-template-columns: 190px 1fr;
+    grid-template-rows: 300px 1fr 200px;
+    /* grid-template-areas: "header logos"
+                         "header middlePage"
+                         "header footer"; */
+  }
+
+  header {
+    display: grid;
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    grid-column: 1;
+    grid-row: 1/-1;
+    background-color: black;
+  }
+
+  .macLogo {
+    display: grid;
+    justify-content: center;
+    width: 250px;
+  }
+
+  .macLogo img {
+    width: 130px;
+    height: 70px;
+    justify-self: center;
+  }
+
+  .logos {
+    padding-left: 90px;
+    grid-column: 2;
+    grid-row: 1;
+    width: 1160px;
+    height: 200px;
+  }
+
+  .unamImg {
+    background-image: url("../images/unamLogoGrande.png");
+    background-size: cover;
+    width: 400px;
+  }
+
+  .acatlanImg {
+    background-image: url("../images/fesaGrande.png");
+    background-size: cover;
+    width: 440px;
+  }
+
+  .middlePage {
+    width: 1230px;
+    grid-column: 2;
+    grid-row: 2;
+    display: grid;
+    grid-column: 500px 1fr;
+    justify-content: space-evenly;
+  }
+
+  .secondMenu {
+    /* display: none;  */
+    background-image: none;
+    position: fixed;
+    background-color: rgb(27, 27, 27);
+    left: 15px;
+    top: 90px;
+    width: 210px;
+    padding: 0;
+    border-radius: 15px;
+  }
+
+  .secondMenuContainer {
+    width: 110px;
+  }
+
+  .option {
+    background-color: Transparent;
+    font-size: 13.5px;
+    border-radius: 0;
+    width: 150px;
+    padding: 7px 20px;
+    box-shadow: none;
+    margin: 0px 10px;
+    justify-self: center;
+    border-bottom: .3px solid gray;
+  }
+
+  .secondMenu a:hover {
+    background-color: white;
+    color: black;
+  }
+
+  .developers {
+    border: none;
+  }
+
+/* image of each class="option" */
+  .image {
+    width: 17px;
+    height: 17px;
+    justify-self: flex-end;
+  }
+
+  .recentNews {
+    width: 600px;
+    grid-column: 1;
+    background-image: none;
+    justify-content: center;
+  }
+
+  .recentNews input {
+    justify-self: center;
+  }
+
+  .recentNewsContainer {
+    justify-self: center;
+    width: 500px;
+  }
+
+  .recentEvents {
+    grid-column: 2;
+    background-image: none;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 20px;
+    padding-left: 270px;
+    width: 1160px;
+    height: 130px;
+    grid-row: 3;
+    align-self: flex-end;
+    padding-bottom: 0;
+  }
+
+  .info {
+    text-align: justify;
+    grid-row: 1;
+    grid-column: 1;
+  }
+
+  .socialMedia {
+    width: 580px;
+    display: grid;
+    justify-items: center;
+    grid-row: 1;
+    grid-column: 2;
+  }
+
+  .message {
+    grid-column: 1/-1;
+    grid-row: 2;
+  }
+}
