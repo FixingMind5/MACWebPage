@@ -633,6 +633,11 @@ a {
 }
 
 @media screen and (min-width: 1025px) {
+
+  .containerLogo {
+    height: 100px;
+  }
+
   .burger-button {
     /* display: none; */
   }
@@ -679,19 +684,36 @@ a {
     grid-column: 2;
     grid-row: 1;
     width: 1160px;
-    height: 200px;
+    height: 170px;
+    padding-bottom: 20px;
+  }
+
+  .unam {
+    height: 70px;
+    display: grid;
+    justify-self: flex-start;
   }
 
   .unamImg {
     background-image: url("../images/unamLogoGrande.png");
     background-size: cover;
+    background-position: left;
     width: 400px;
+    height: 100px;
+  }
+
+  .acatlan {
+    height: 70px;
+    display: grid;
+    justify-self: flex-end;
   }
 
   .acatlanImg {
     background-image: url("../images/fesaGrande.png");
     background-size: cover;
     width: 440px;
+    height: 100px;
+    background-position-y: center;
   }
 
   .middlePage {
