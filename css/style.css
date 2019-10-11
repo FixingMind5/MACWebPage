@@ -651,7 +651,7 @@ a {
   body {
     display: grid;
     grid-template-columns: 190px 1fr;
-    grid-template-rows: 300px 1fr 200px;
+    grid-template-rows: 220px 1fr 140px;
     /* grid-template-areas: "header logos"
                          "header middlePage"
                          "header footer"; */
@@ -686,6 +686,7 @@ a {
     width: 1160px;
     height: 170px;
     padding-bottom: 20px;
+    background-image: none;
   }
 
   .unam {
@@ -717,12 +718,18 @@ a {
   }
 
   .middlePage {
-    width: 1230px;
+    width: 1250px;
     grid-column: 2;
     grid-row: 2;
     display: grid;
-    grid-column: 500px 1fr;
+    grid-template-columns: 550px 400px;
     justify-content: space-evenly;
+    align-items: flex-start;
+    background-image: linear-gradient(rgba(255, 255, 255, 1),rgba(255, 255, 255, 0)),
+    url("../images/roca.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   .secondMenu {
